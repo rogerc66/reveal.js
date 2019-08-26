@@ -25,40 +25,22 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown>
-					<textarea data-template>
-						## Roger's Learning slides
-
-						A skill dev slides [link](https://zenityforce.com).
-					</textarea>
-				</section>
-				<section data-markdown="./md/mdppt.md"
-				data-separator="^\n\n\n"
+				<section data-markdown="./md/apple/1st_slide.md"
+         		data-separator="^\n\n\n"
          		data-separator-vertical="^\n\n"
          		data-separator-notes="^Note:"
          		data-charset="iso-8859-15">
-				</section>
-				<section>
-					<section>Slide 2 V1</section>
-					<section>Slide 2 V2</section>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-					<!-- .slide: data-background="#ff0000" -->
-					- Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
-					- Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
-					</script>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						## Page title
-
-						A paragraph with some text and a [link](http://hakim.se).
-					</textarea>
+    <!--
+        Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+        For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+    -->
 				</section>
 			</div>
 		</div>
+
 		<script src="js/reveal.js"></script>
+
+		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
