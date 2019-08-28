@@ -25,7 +25,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown>
+				<section data-markdown data-autosilde="2000">
 					<textarea data-template>
 						## Roger's Learning slides
 
@@ -36,18 +36,22 @@
 				data-separator="^\n\n\n"
          		data-separator-vertical="^\n\n"
          		data-separator-notes="^Note:"
-         		data-charset="iso-8859-15">
+         		data-charset="iso-8859-15" data-autosilde="2000">
 				</section>
-				<section>
-					<section>Slide 2 V1</section>
-					<section>Slide 2 V2</section>
+				<section data-autosilde="2000">
+					<section data-autosilde="2000"><p>Slide 2 V1</p></section>
+					<section data-autosilde="2000"><p>Slide 2 V2</p></section>
 				</section>
-				<section data-markdown>
+				<section data-markdown data-autosilde="2000">
 					<script type="text/template">
-					<!-- .slide: data-background="#ff0000" -->
-					- Item 1 <!-- .element: class="fragment" data-fragment-index="1" -->
-					- Item 2 <!-- .element: class="fragment" data-fragment-index="2" -->
+					<!-- .slide: data-background="#ffff00" -->
+					- Item 1 <!-- .element: class="fragment" data-autosilde="2000" data-fragment-index="1" -->
+					- Item 2 <!-- .element: class="fragment" data-autosilde="2000" data-fragment-index="2" -->
 					</script>
+				</section>
+				<section data-autoslide="1500">
+  					<p class="fragment fade">Some text you want to appear</p>
+  					<p class="fragment" data-autoslide="0"></p> <!-- no one knows I exist! -->
 				</section>
 				<section data-markdown>
 					<textarea data-template>
@@ -58,7 +62,10 @@
 				</section>
 			</div>
 		</div>
+
 		<script src="js/reveal.js"></script>
+
+		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
@@ -69,6 +76,9 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
+			});
+			Reveal.configure({
+  				autoSlide: 3500
 			});
 		</script>
 	</body>
