@@ -1,0 +1,12 @@
+{
+    //On Windows try "markmon.cmd" if you get errors.
+    //If markmon is not on your path you'll need to use a full path to it
+    "executable": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\markmon.cmd",
+    "port": 3000,
+    "pandoc_path": "C:\\Program Files\\Pandoc\\pandoc.exe",
+    "command": "pandoc -t HTML5 --mathjax -N",
+    "stylesheet": "D:\\Downloads\\Github\\reveal.js\\md\\github-markdown.css",
+    //"stylesheet": null,
+    //"projectdir": null,
+    "projectdir": "C:\\Users\\Administrator\\AppData\\Roaming\\Sublime Text 3\\Packages\\User"
+}

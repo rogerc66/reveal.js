@@ -42,6 +42,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "install": "^0.13.0"
+    "install": "^0.13.0",
+    "mathjax": "^2.7.5"
   }
 }
